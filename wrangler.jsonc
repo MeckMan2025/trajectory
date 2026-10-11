@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "trajectory",
+  "compatibility_date": "2026-10-11",
+
+  // Static-assets-only Worker: no `main` entrypoint, Cloudflare serves ./public directly.
+  "assets": {
+    "directory": "./public"
+  },
+
+  // Attaching the hostname here creates and manages the DNS record automatically.
+  "routes": [
+    {
+      "pattern": "trajectory.meckman.org",
+      "custom_domain": true
+    }
+  ],
+
+  "observability": {
+    "enabled": true
+  }
+}

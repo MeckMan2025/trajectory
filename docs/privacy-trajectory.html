@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Privacy Policy - Trajectory</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<a class="back" href="../index.html">All apps by Andrew Meckley</a>
+
+<h1>Privacy Policy</h1>
+<p class="eff">Trajectory (trajectory.meckman.org) &middot; Effective October 11, 2026</p>
+
+<h2>What this app is</h2>
+<p>
+  Trajectory is a public web app for robotics students and mentors. It measures a ball
+  launcher's exit speed and launch angle from a video the user loads, and builds a
+  distance to setpoint table for robot code. It runs entirely in the web browser.
+</p>
+
+<h2>What data it accesses</h2>
+<div class="scroll">
+<table>
+  <tr><th>Data</th><th>Why</th><th>How it is obtained</th></tr>
+  <tr><td>Video files the user chooses</td><td>To find the ball in each frame</td><td>Picked or dropped in by the user; decoded in the browser and never uploaded</td></tr>
+  <tr><td>Shot measurements and the labels the user types (setpoint, hood, notes)</td><td>To build consistency stats and the shot table</td><td>Entered by the user</td></tr>
+  <tr><td>CSV files from other tools</td><td>To compare results on the Compare page</td><td>Picked by the user; read in the browser</td></tr>
+  <tr><td>Preferences (mentor mode, ball color, current session)</td><td>To remember settings between visits</td><td>Saved by the app in the browser</td></tr>
+</table>
+</div>
+
+<h2>Where data is stored</h2>
+<p>
+  On the user's own device only. Shot data is kept in the browser's IndexedDB and preferences
+  in localStorage. Video frames are held in memory while the page is open and discarded when
+  it closes. Nothing is sent to a server operated by the developer.
+</p>
+
+<h2>Who it is shared with</h2>
+<p>
+  None. The site's files are served by Cloudflare, which, like any web host, receives
+  standard request information (such as IP address and browser type) when the page loads.
+  The app sends no videos, measurements or personal information to Cloudflare or anyone
+  else. There are no accounts, analytics, advertising or cookies. A session is shared only
+  if the user exports a session file and sends it themselves.
+</p>
+
+<h2>Retention and deletion</h2>
+<p>
+  Data stays in the browser until the user deletes shots or sessions in the app, or clears
+  the site's data in browser settings.
+</p>
+
+<h2>Children</h2>
+<p>
+  Trajectory is used by students on robotics teams. It collects nothing personally
+  identifying from them; the only text it stores is what the user types into shot notes,
+  and that stays on the device.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes, the updated version will be posted here with a new effective
+  date.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Andrew Meckley &middot;
+  <a href="mailto:andrew.meckley1981@gmail.com">andrew.meckley1981@gmail.com</a>
+</p>
+
+<footer>
+  This policy covers Trajectory only. The
+  <a href="../index.html">general policy</a> covers all applications by this developer.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "width": 960,
+  "height": 540,
+  "fps": 240,
+  "duration": 0.75,
+  "pre": 0.06,
+  "v0": 7.4,
+  "angleDeg": 50,
+  "k": 0.045,
+  "ballDiameter": 0.072,
+  "color": "yellow",
+  "pxPerM": 150,
+  "originPx": {
+    "x": 90,
+    "y": 470
+  },
+  "noise": 3,
+  "seed": 21,
+  "stickA": {
+    "x": 120,
+    "y": 477.5
+  },
+  "stickB": {
+    "x": 270,
+    "y": 477.5
+  },
+  "launchFrame": 14
+}

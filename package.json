@@ -1,0 +1,16 @@
+{
+  "name": "trajectory",
+  "private": true,
+  "type": "module",
+  "description": "Launcher tuning from slow-motion video. A Meckman Lab experiment.",
+  "scripts": {
+    "test": "node --test test/unit/*.test.js",
+    "e2e": "node --test test/e2e/*.test.js",
+    "serve": "npx --yes http-server@14.1.1 public -p 8787 -c-1",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2",
+    "wrangler": "^4.149.0"
+  }
+}

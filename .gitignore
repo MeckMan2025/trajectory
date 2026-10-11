@@ -1,0 +1,6 @@
+node_modules/
+.wrangler/
+test/output/
+.DS_Store
+test/fixtures/*.mp4
+test/fixtures/*.mov
