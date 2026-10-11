@@ -16,7 +16,8 @@ before(async () => {
   if (!existsSync(`${FX}/shot-240.mp4`)) execFileSync('node', ['tools/make-fixtures.mjs'], { stdio: 'inherit' });
   truth = JSON.parse(readFileSync(`${FX}/truth.json`, 'utf8'));
   mkdirSync('test/output', { recursive: true });
-  srv = await serve();
+  // BASE_URL=https://trajectory.meckman.org npm run e2e tests the live site.
+  srv = process.env.BASE_URL ? { url: process.env.BASE_URL, server: { close() {} } } : await serve();
   browser = await chromium.launch({ channel: 'chrome' });
 });
 after(async () => {

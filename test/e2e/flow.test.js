@@ -10,7 +10,8 @@ let srv;
 let browser;
 
 before(async () => {
-  srv = await serve();
+  // BASE_URL=https://trajectory.meckman.org npm run e2e tests the live site.
+  srv = process.env.BASE_URL ? { url: process.env.BASE_URL, server: { close() {} } } : await serve();
   browser = await chromium.launch();
 });
 after(async () => {
